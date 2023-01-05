@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tuido-group": {
+      "hosting": {
+        "tuido-group": [
+          "tuido-group"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tuido-group"
+  }
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    font-family: 'montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    color: white;
+}
+
+.socialIcons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.page {
+    background: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    height: 100vh;
+    position: relative;
+}
+
+.countdown-col {
+    background: url(../../assets/comingSoonImg1.webp) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    // background-color: rgba(76, 0, 130, 0.466);
+}
+
+.logoAndName {
+    display: flex;
+    align-items: center;
+}
+
+.companyName {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: x-large;
+}
+
+.tuidogrouplogo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logoNameAndCounter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: fit-content;
+    background: rgba(76, 0, 130, 0.705);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.comingSoonText {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.margin-bottom{
+    margin-bottom: 7px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.time span {
+    padding: 0 14px;
+    font-size: 10px;
+    text-align: center;
+}
+
+mat-error {
+    color: red;
+}
+
+.time span div {
+    font-size: 40px;
+    display: flex;
+}
+
+.zero {
+    margin: 0;
+    padding: 0;
+}
+
+.newslatter {
+    width: 90%;
+}
+
+.newslatter h4 {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.newslatter input,
+.newslatter button {
+    display: block;
+    margin: 12px auto;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.newslatter-button {
+    background: linear-gradient(125deg, rgba(160, 116, 190, 0.911), indigo);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.newslatter-button:hover {
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 768px) {
+    .col {
+        flex: 100%;
+    }
+
+    .newsletter-col {
+        height: 400px;
+    }
+
+    .countdown-col {
+        height: 600px;
+    }
+}

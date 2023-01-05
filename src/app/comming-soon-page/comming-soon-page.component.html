@@ -1,0 +1,56 @@
+<div class="page">
+    <div class="countdown-col col">
+        <div class="logoNameAndCounter">
+            <div class="logoAndName">
+                <img class="tuidogrouplogo" src="../../assets/tuidogrouplogo.jpeg" alt="tuidogrouplogo">
+                <p class="companyName">Tuido Group</p>
+            </div>
+            <p class="comingSoonText">Coming Soon In...</p>
+            <div class="time">
+                <span>
+                    <div class="days margin-bottom" id="days">
+                        <p *ngIf="d<10" class="zero">0</p>{{d}}
+                    </div> Days
+                </span>
+                <span>
+                    <div id="hours" class="margin-bottom">
+                        <p *ngIf="h<10" class="zero">0</p>{{h}}
+                    </div> Hours
+                </span>
+                <span>
+                    <div id="minutes" class="margin-bottom">
+                        <p *ngIf="m<10" class="zero">0</p>{{m}}
+                    </div> Minutes
+                </span>
+                <span>
+                    <div id="seconds" class="margin-bottom">
+                        <p *ngIf="s<10" class="zero">0</p>{{s}}
+                    </div> Seconds
+                </span>
+            </div>
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/tuido_group/">
+                    <i class="fa fa-instagram icon fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/tuido-group/">
+                    <i class="fa fa-linkedin icon fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-col col">
+        <div class="newslatter middle">
+            <h4>Subscribe to get notification when we start</h4>
+            <form [formGroup]="getNotifiedForm" (ngSubmit)="submit()">
+                <mat-error *ngIf="email?.errors?.['required'] && email?.touched">
+                    Email address is required
+                </mat-error>
+                <mat-error *ngIf="email?.errors?.['email'] && email?.touched">
+                    Please enter a valid email address
+                </mat-error>
+                <input type="email" formControlName="email" placeholder="Enter Your Email" />
+                <button type="submit" class="newslatter-button">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</div>
